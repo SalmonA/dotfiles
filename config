@@ -128,9 +128,11 @@ assign [class="spotify"] $workspace10
 assign [class="MonoDevelop"] $workspace4
 
 
-workspace $workspace1 output HDMI-1
-workspace $workspace2 output HDMI-1
-workspace $workspace9 output eDP-1
+workspace $workspace1  output HDMI-1
+workspace $workspace2  output HDMI-1
+workspace $workspace9  output eDP-1
+workspace $workspace10 output eDP-1
+
 
 
 # reload the configuration file
