@@ -92,12 +92,12 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1 " 
-set $workspace2 "2 "
+set $workspace1  "1 " 
+set $workspace2  "2 "
 set $workspace10 "10 "
-set $workspace4 "4 "
-set $workspace3 "3 "
-set $workspace9 "9 "
+set $workspace4  "4 "
+set $workspace3  "3 "
+set $workspace9  "9 "
 
 
 # switch to workspace
@@ -219,6 +219,12 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+# Keyboard layout controls
+exec_always --no-startup-id "setxkbmap -layout fr,us"
+exec_always "setxkbmap -option 'grp:win_space_toggle'"
+
+new_window 1pixel
 
 exec_always feh --bg-fill /home/salmon/Pictures/Wallpaper.jpg
 
