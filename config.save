@@ -228,8 +228,8 @@ bindsym $mod+y exec setxkbmap fr
 
 #i3-gaps configuration
 for_window [class="^.*"] border pixel 0
-gaps inner 20
-gaps outer 20
+gaps inner set 20
+gaps outer set 20
 bindsym $mod+o          gaps inner all set 0; gaps outer all set 0
 bindsym $mod+i          gaps inner all set 20; gaps outer all set 20
 smart_gaps on
